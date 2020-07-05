@@ -4,11 +4,11 @@ import "./index.css";
 import App from "./App";
 // import * as serviceWorker from './serviceWorker';
 
-if (!Array.prototype.last) {
-  Array.prototype.last = function () {
-    return this[this.length - 1];
-  };
-}
+// if (!Array.prototype.last) {
+//   Array.prototype.last = function () {
+//     return this[this.length - 1];
+//   };
+// }
 
 const DATA = [
   { id: "todo-0", name: "Eat", completed: true },

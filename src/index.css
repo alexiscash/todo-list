@@ -290,3 +290,14 @@ body {
 .c-cb > input[type="checkbox"]:checked + label::after {
   opacity: 1;
 }
+
+.loading {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 50%;
+}
+
+/* #load {
+  margin: auto;
+} */
