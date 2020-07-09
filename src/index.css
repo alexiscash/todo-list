@@ -291,11 +291,16 @@ body {
   opacity: 1;
 }
 
-.loading {
+/* .loading {
   display: flex;
   justify-content: center;
   margin: auto;
   width: 50%;
+} */
+
+.loading {
+  display: grid;
+  place-items: auto center;
 }
 
 /* #load {

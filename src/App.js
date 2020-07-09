@@ -49,6 +49,8 @@ function App(props) {
       body: JSON.stringify({ name, completed: false }),
     });
     const newTask = await res.json();
+    console.log(newTask);
+
     setTasks((prevTasks) => [...prevTasks, newTask]);
   }
 
