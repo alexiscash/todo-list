@@ -8,6 +8,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use(morgan("tiny"));
+// app.use(express.static("build"));
 
 const db = monk("localhost/todo");
 const tasks = db.get("tasks");

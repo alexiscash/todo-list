@@ -1,14 +1,21 @@
 import React, { useState } from "react";
 
-export default function Todo(props) {
-  const {
-    name,
-    completed,
-    id,
-    toggleTaskCompleted,
-    deleteTask,
-    editTask,
-  } = props;
+export default function Todo({
+  name,
+  completed,
+  id,
+  toggleTaskCompleted,
+  deleteTask,
+  editTask,
+}) {
+  // const {
+  //   name,
+  //   completed,
+  //   id,
+  //   toggleTaskCompleted,
+  //   deleteTask,
+  //   editTask,
+  // } = props;
   const [isEditing, setEditing] = useState(false);
 
   function handleSubmit(e) {
@@ -23,7 +30,7 @@ export default function Todo(props) {
         <label className="todo-label" htmlFor={id}>
           New name for {name}
         </label>
-        <input id={props.id} className="todo-text" type="text" />
+        <input id={id} className="todo-text" type="text" />
       </div>
       <div className="btn-group">
         <button
